@@ -39,17 +39,17 @@ pub fn main() {
 
     let m1_cs = pins.gpio26;
     let s1_cs = pins.gpio25;
-    let m2_cs = pins.gpio2;
-    let s2_cs = pins.gpio13;
+    let m2_cs = pins.gpio22;
+    let s2_cs = pins.gpio21;
 
     let m1s1_dc = pins.gpio16;
-    let m2s2_dc = pins.gpio14;
+    let m2s2_dc = pins.gpio13;
 
     let m1s1_rst = pins.gpio17;
-    let m2s2_rst = pins.gpio0;
+    let m2s2_rst = pins.gpio14;
 
-    let m1_busy = pins.gpio34;
-    let s1_busy = pins.gpio35;
+    let m1_busy = pins.gpio35;
+    let s1_busy = pins.gpio15;
     let m2_busy = pins.gpio36;
     let s2_busy = pins.gpio39;
 
