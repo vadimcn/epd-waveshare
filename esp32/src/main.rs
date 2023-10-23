@@ -34,24 +34,24 @@ pub fn main() {
     let peripherals = Peripherals::take().unwrap();
     let pins = peripherals.pins;
 
-    let sclk = pins.gpio13;
-    let mosi = pins.gpio14;
+    let sclk = pins.gpio18;
+    let mosi = pins.gpio23;
 
-    let m1_cs = pins.gpio23;
-    let s1_cs = pins.gpio22;
-    let m2_cs = pins.gpio16;
-    let s2_cs = pins.gpio19;
+    let m1_cs = pins.gpio26;
+    let s1_cs = pins.gpio25;
+    let m2_cs = pins.gpio2;
+    let s2_cs = pins.gpio13;
 
-    let m1s1_dc = pins.gpio25;
-    let m2s2_dc = pins.gpio17;
+    let m1s1_dc = pins.gpio16;
+    let m2s2_dc = pins.gpio14;
 
-    let m1s1_rst = pins.gpio33;
-    let m2s2_rst = pins.gpio5;
+    let m1s1_rst = pins.gpio17;
+    let m2s2_rst = pins.gpio0;
 
-    let m1_busy = pins.gpio32;
-    let s1_busy = pins.gpio26;
-    let m2_busy = pins.gpio18;
-    let s2_busy = pins.gpio4;
+    let m1_busy = pins.gpio34;
+    let s1_busy = pins.gpio35;
+    let m2_busy = pins.gpio36;
+    let s2_busy = pins.gpio39;
 
     let spi_host = SpiDriver::new(
         peripherals.spi3,
